@@ -13,7 +13,7 @@ public class Start {
         s=ss.toCharArray();
         Stringovi.getStringovi().zad08(s,p);
         System.out.println(new String(p).trim());
-        System.out.println("Dro jutro");
+        System.out.println("Divno jutro");
 
     }
 }
