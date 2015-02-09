@@ -185,20 +185,31 @@ public class Stringovi {
     }
 
     /**
-     * <b>Zadatak 08<b/>
+     * <b>Zadatak 09<b/>
      * Napisati funkciju koja dobija 2 argumenta tipa string.
      * Funkcija od prvog stringa u kojem su samo slova
      * pravi drugi string tako da svako slovo zameni odgovarajucim brojem:
      * A=1, B=2, C=3 itd.:
      * <p>
-     * <b>primer: ABCMN
-     * <b>rešenje: 1231314
+     * <b>primer: ABCMN<b/>
+     * <b>re?enje: 1231314<b/>
      *
      * @param ulaz prima ulazni string koji se treba kodirati
      * @param izlaz kodirani string
      *
      */
     public void zad09(char[] ulaz, char[] izlaz){
-
+        //a=65-1
+        int brojac=0;
+        for (char c : ulaz) {
+            int broj=c-64;
+            if (broj<10) {
+                izlaz[brojac++]= (char) (broj+'0');
+            } else {
+                izlaz[brojac++]= (char) (broj/10+'0');
+                izlaz[brojac++]= (char) (broj%10+'0');
+            }
+            izlaz[brojac]='\0';
+        }
     }
 }
