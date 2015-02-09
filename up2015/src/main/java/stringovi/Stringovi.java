@@ -230,4 +230,23 @@ public class Stringovi {
         //ulaz[ulaz.length-1]='\0';
         return ulaz;
     }
+    /**
+     * Funkica koja ispituje da li je string palindrom
+     * Primer: MADAM
+     * Resenje: Jeste palindrom
+     *       @param ulaz Ulazni string
+     *       @return Vraca true ako je palindrom , false ako nije
+     */
+    public boolean zad12(char[] ulaz){
+        char[] palindrom=new char[ulaz.length];
+        int brojac=0;
+        for (int i = ulaz.length - 1; i >= 0; i--) {
+            palindrom[brojac++]=ulaz[i];
+        }
+        if(Arrays.equals(ulaz,palindrom)==true)
+            return true;
+
+        return false;
+    }
+
 }

@@ -9,13 +9,12 @@ public class Start {
         char[] p = new char[100];
         char[] d;
         char[] t;
-        String ss = "ABCDab";
+        String ss = "MADAM";
         s=ss.toCharArray();
-        Stringovi.getStringovi().zad11(s,3);
-
-        for (int i = 0; i < p.length; i++) {
-            System.out.printf("%c\n",p[i]);
-        }
+        if(Stringovi.getStringovi().zad12(s)==true)
+            System.out.println("Jeste palindrom");
+        else
+            System.out.println("Nije palindrom");
 
 
     }
