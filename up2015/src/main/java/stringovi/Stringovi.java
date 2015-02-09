@@ -34,9 +34,9 @@ public class Stringovi {
     }
 
     /**
-     * 2.	Koristik unosi rečenicu u string s. Sastaviti i ispisati najveći mogući
-     * trocifreni broj koji se može sastaviti od cifara koje se nalaze u tom stringu,
-     * ali tako da broj ima sve cifre različite. Napomena: rezultat mora biti broj a ne string!
+     * Koristik unosi recenicu u string s. Sastaviti i ispisati najveci moguci
+     * trocifreni broj koji se moze sastaviti od cifara koje se nalaze u tom stringu,
+     * ali tako da broj ima sve cifre razlicite. Napomena: rezultat mora biti broj a ne string!
      * primer: Dana1s je5 le8p d84an
      * rezultat: 854
      */
@@ -66,8 +66,8 @@ public class Stringovi {
     }
 
     /**
-     * 5.	 Koristik unosi rečenicu u string s. Ispisati reč koja se nalazi
-     * u centru rečenice. Ako je u centru razmak – ispisati reč pre i posle.
+     * 5.	 Koristik unosi recenicu u string s. Ispisati rec koja se nalazi
+     * u centru recenice. Ako je u centru razmak – ispisati rec pre i posle.
      */
     public void zad05(String str) {
         ArrayList<String> reci = new ArrayList<String>();
@@ -84,7 +84,7 @@ public class Stringovi {
 
     /**
      * Korsnik string koji sadrzi iskljucivo slova. Napraviti funkciju koja popunjava novi string
-     * tako što kodira ulazni string (broji sukcesivna slova i zapisuje u rezultatu) kao u primeru.
+     * tako sto kodira ulazni string (broji sukcesivna slova i zapisuje u rezultatu) kao u primeru.
      * Primer:
      * ulaz: xxxaaabbcccc
      * rezultat: 3x3a2b4c
@@ -126,10 +126,10 @@ public class Stringovi {
 
     /**
      * Korisnik unosi string koji se sastoji samo od cifara . Napisati funkciju koja uneti string deli
-     * na dva nova identična stringa. Cifre u stringovima moraju biti u opadajućem redosledu.
-     * Neupotrebljene cifre (kada ih nema paran broj) staviti u treći string.
+     * na dva nova identicna stringa. Cifre u stringovima moraju biti u opadajucem redosledu.
+     * Neupotrebljene cifre (kada ih nema paran broj) staviti u treci string.
      * primer: 5784768943789
-     * rešenje: 9874, 9874, 87653
+     * resenje: 9874, 9874, 87653
      */
 
     public void zad07(char[] s, char[] prvi, char[] drugi, char[] treci) {
@@ -160,7 +160,7 @@ public class Stringovi {
     /**
      * 8. Napisati funkciju koja sva slova iz prvog stringa menja u brojeve u drugom stringu tako da je: A=1, B=2, C=3,...
      * primer: ABCMN
-     * rešenje: 1-2-3-13-14
+     * resenje: 1-2-3-13-14
      * <p/>
      * *
      */
@@ -182,5 +182,23 @@ public class Stringovi {
             }
         }
         r[r_i - 1] = '\0';
+    }
+
+    /**
+     * <b>Zadatak 08<b/>
+     * Napisati funkciju koja dobija 2 argumenta tipa string.
+     * Funkcija od prvog stringa u kojem su samo slova
+     * pravi drugi string tako da svako slovo zameni odgovarajucim brojem:
+     * A=1, B=2, C=3 itd.:
+     * <p>
+     * <b>primer: ABCMN
+     * <b>rešenje: 1231314
+     *
+     * @param ulaz prima ulazni string koji se treba kodirati
+     * @param izlaz kodirani string
+     *
+     */
+    public void zad09(char[] ulaz, char[] izlaz){
+
     }
 }
