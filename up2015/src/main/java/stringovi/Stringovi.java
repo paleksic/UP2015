@@ -227,7 +227,6 @@ public class Stringovi {
                 ulaz[i]= (char) ('z'+(ulaz[i]-'z'-k)%26);
             }
         }
-        //ulaz[ulaz.length-1]='\0';
         return ulaz;
     }
     /**
@@ -252,10 +251,12 @@ public class Stringovi {
      * Funkcija koja ispisuje sva slova iz recenice koja se pojavljuju samo jednom
      * <b>Primer</b> : DANAS JE LEP DAN
      * <b>Resenje</b> : DANSJELP
+     * @param ulaz String za ulaz
      */
     public void zad13(char[] ulaz){
         int[] brojSlova= new int[256];
         Arrays.fill(brojSlova,0);
+
         for (int i = 0; i < ulaz.length; i++) {
             int slovoBroj= ulaz[i];
             brojSlova[slovoBroj]++;
