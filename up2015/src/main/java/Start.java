@@ -11,10 +11,15 @@ public class Start {
         char[] t;
         String ss = "ABCD";
         s=ss.toCharArray();
-        Stringovi.getStringovi().zad08(s,p);
-        System.out.println(new String(p).trim());
-        System.out.println("Divno jutro");
-        
+        Stringovi.getStringovi().zad09(s,p);
+
+        int i=0;
+        System.out.println(p.length);
+        while (p[i]!='\0') {
+            System.out.printf("%c\n",p[i]);
+            i++;
+        }
+
 
     }
 }

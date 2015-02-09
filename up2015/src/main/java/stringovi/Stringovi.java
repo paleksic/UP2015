@@ -199,6 +199,17 @@ public class Stringovi {
      *
      */
     public void zad09(char[] ulaz, char[] izlaz){
-
+        //a=65-1
+        int brojac=0;
+        for (char c : ulaz) {
+            int broj=c-64;
+            if (broj<10) {
+                izlaz[brojac++]= (char) (broj+'0');
+            } else {
+                izlaz[brojac++]= (char) (broj/10+'0');
+                izlaz[brojac++]= (char) (broj%10+'0');
+            }
+            izlaz[brojac]='\0';
+        }
     }
 }
