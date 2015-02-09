@@ -212,4 +212,22 @@ public class Stringovi {
             izlaz[brojac]='\0';
         }
     }
+    /**
+     * Funkcija koja sva velika slova pomera za K mesta unapred a sva mala slova za K mesta unazad
+     *             @param ulaz String koji se kodira
+     *             @param k broj pomeraja
+     *             @return vraca char[] kodirani niz
+     */
+    public char[] zad11(char[] ulaz, int k){
+        int i;
+        for (i = 0; i < ulaz.length; i++) {
+            if(ulaz[i]>='A' && ulaz[i]<='Z'){
+                ulaz[i]= (char) ('A'+(ulaz[i]-'A'+k)%26);
+            }else if(ulaz[i]>='a' && ulaz[i]<='z'){
+                ulaz[i]= (char) ('z'+(ulaz[i]-'z'-k)%26);
+            }
+        }
+        //ulaz[ulaz.length-1]='\0';
+        return ulaz;
+    }
 }

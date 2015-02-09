@@ -9,15 +9,12 @@ public class Start {
         char[] p = new char[100];
         char[] d;
         char[] t;
-        String ss = "ABCD";
+        String ss = "ABCDab";
         s=ss.toCharArray();
-        Stringovi.getStringovi().zad09(s,p);
+        Stringovi.getStringovi().zad11(s,3);
 
-        int i=0;
-        System.out.println(p.length);
-        while (p[i]!='\0') {
+        for (int i = 0; i < p.length; i++) {
             System.out.printf("%c\n",p[i]);
-            i++;//
         }
 
 
