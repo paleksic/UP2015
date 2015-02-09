@@ -243,10 +243,30 @@ public class Stringovi {
         for (int i = ulaz.length - 1; i >= 0; i--) {
             palindrom[brojac++]=ulaz[i];
         }
-        if(Arrays.equals(ulaz,palindrom)==true)
+        if(Arrays.equals(ulaz,palindrom))
             return true;
 
         return false;
+    }
+    /**
+     * Funkcija koja ispisuje sva slova iz recenice koja se pojavljuju samo jednom
+     * <b>Primer</b> : DANAS JE LEP DAN
+     * <b>Resenje</b> : DANSJELP
+     */
+    public void zad13(char[] ulaz){
+        int[] brojSlova= new int[256];
+        Arrays.fill(brojSlova,0);
+        for (int i = 0; i < ulaz.length; i++) {
+            int slovoBroj= ulaz[i];
+            brojSlova[slovoBroj]++;
+        }
+        for (int i = 0; i < ulaz.length; i++) {
+            if(ulaz[i]==' ') brojSlova[ulaz[i]] = 0;
+            if(brojSlova[ulaz[i]]>=1){
+                System.out.printf("%c",ulaz[i]);
+                brojSlova[ulaz[i]]=0;
+            }
+        }
     }
 
 }
