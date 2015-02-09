@@ -17,7 +17,7 @@ public class Start {
         System.out.println(p.length);
         while (p[i]!='\0') {
             System.out.printf("%c\n",p[i]);
-            i++;
+            i++;//
         }
 
 
