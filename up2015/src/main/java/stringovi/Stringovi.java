@@ -256,6 +256,7 @@ public class Stringovi {
     public void zad13(char[] ulaz){
         int[] brojSlova= new int[256];
         Arrays.fill(brojSlova,0);
+
         for (int i = 0; i < ulaz.length; i++) {
             int slovoBroj= ulaz[i];
             brojSlova[slovoBroj]++;
