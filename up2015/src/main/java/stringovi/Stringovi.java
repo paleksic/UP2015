@@ -2,6 +2,7 @@ package stringovi;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Created by paleksic on 2/4/2015.
@@ -71,9 +72,7 @@ public class Stringovi {
      */
     public void zad05(String str) {
         ArrayList<String> reci = new ArrayList<String>();
-        for (String s : str.split(" ")) {
-            reci.add(s);
-        }
+        Collections.addAll(reci, str.split(" "));
         int n = reci.size() - 1;
         if (n % 2 == 0) {
             System.out.println(reci.get(n / 2));
@@ -211,6 +210,28 @@ public class Stringovi {
             }
             izlaz[brojac]='\0';
         }
+    }
+
+    /**
+     * Funkcija koja vraca samo ona slova u rastucem poretku
+     * Primer: ANANAS JE UKUSAN
+     * Rezultat: ANNSUU
+     * @param ulaz prima niz char[] kao ulaz
+     * @return duzina niza
+     */
+    public int zad10(char[] ulaz){
+        int i,j;
+        j = 0;
+
+        int max=0;
+        for (i = 0; i < ulaz.length; i++) {
+            if(ulaz[i]>=max){
+                max=ulaz[i];
+                ulaz[j]= (char) max;
+                j++;
+            }
+        }
+        return j+1;
     }
     /**
      * Funkcija koja sva velika slova pomera za K mesta unapred a sva mala slova za K mesta unazad

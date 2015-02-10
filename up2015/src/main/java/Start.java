@@ -9,9 +9,12 @@ public class Start {
         char[] p = new char[100];
         char[] d;
         char[] t;
-        String ss = "DANAS JE LEP DAN";
+        String ss = "ANANAS JE UKUSAN";
         s=ss.toCharArray();
-        Stringovi.getStringovi().zad13(s);
+        int k= Stringovi.getStringovi().zad10(s);
+        for ( int i=0 ; i < k; i++) {
+            System.out.println(s[i]);
+        }
 
 
     }
