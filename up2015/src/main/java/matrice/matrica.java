@@ -2,6 +2,7 @@ package matrice;
 
 /**
  * Created by paleksic on 2/3/2015.
+ * paleksic083@gmail.com
  */
 public class matrica {
     private static final matrica ourInstance = new matrica();

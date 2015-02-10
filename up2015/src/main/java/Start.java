@@ -2,6 +2,7 @@ import stringovi.Stringovi;
 
 /**
  * Created by paleksic on 2/8/2015.
+ * paleksic083@gmail.com
  */
 public class Start {
     public static void main(String[] args) {
@@ -9,12 +10,18 @@ public class Start {
         char[] p = new char[100];
         char[] d;
         char[] t;
-        String ss = "ANANAS JE UKUSAN";
+        String ss = "ADFRTRGHRTHFD";
         s=ss.toCharArray();
-        int k= Stringovi.getStringovi().zad10(s);
-        for ( int i=0 ; i < k; i++) {
-            System.out.println(s[i]);
+
+        Stringovi str = new Stringovi();
+        Stringovi.zad14 zd = str.new zad14();
+
+        zd.zadatak14(s);
+        for (int i = 0; i < zd.getT().length; i++) {
+            System.out.printf("%c", zd.getT()[i]);
         }
+
+
 
 
     }
