@@ -10,9 +10,9 @@ public class Start {
         char[] p = new char[100];
         char[] d;
         char[] t;
-        String ss = "171253449";
+        String ss = "2211";
         s=ss.toCharArray();
-        Stringovi.getStringovi().zad15(s);
+        Stringovi.getStringovi().zad17(s);
 
 
 

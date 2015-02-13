@@ -294,6 +294,16 @@ public class Stringovi {
         }
     }
 
+    /**
+     * Funkcija koja pravi novi string koji se sastoji samo
+     * od cifara koje se nisu ponavljale . String treba da
+     * sadrzi cifre u originalnom
+     * redosledu
+     * primer: 11223455
+     * resenje: 34
+     *
+     * @param ulaz Ulazni string
+     */
     public void zad15(char[] ulaz) {
         int[] brSlova = new int[10];
         Arrays.fill(brSlova, 0);
@@ -312,7 +322,37 @@ public class Stringovi {
         }
     }
 
+    /**
+     * Funkcija koja string koji se sastoji samo od cifara vecih
+     * od nula, modifikuje tako da izmedju scifara koje se ponavljaju
+     * ubacuje nula.
+     * Primer: 122334
+     * Resenje: 12023034
+     *
+     * @param ulaz Ulazni string
+     */
+    @SuppressWarnings("ManualArrayCopy")
+    public void zad17(char[] ulaz) {
+        char[] novi;
+        novi = Arrays.copyOf(ulaz, 100);
+        int n = ulaz.length;
+        /* algoritam za ubacivanje */
+        for (int i = 0; i < n - 1; i++) {
+            if (novi[i] == novi[i + 1]) {
+                for (int j = n; j > i + 1; j--) {
+                    novi[j] = novi[j - 1];
+                }
+                novi[i + 1] = '0';
+                n++;
+                i++;
+            }
 
+        }
+        for (int i = 0; i < n; i++) {
+            System.out.printf("%c", novi[i]);
+        }
+
+    }
 
     public class zad14 {
         /**
