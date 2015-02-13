@@ -10,16 +10,9 @@ public class Start {
         char[] p = new char[100];
         char[] d;
         char[] t;
-        String ss = "ADFRTRGHRTHFD";
+        String ss = "171253449";
         s=ss.toCharArray();
-
-        Stringovi str = new Stringovi();
-        Stringovi.zad14 zd = str.new zad14();
-
-        zd.zadatak14(s);
-        for (int i = 0; i < zd.getT().length; i++) {
-            System.out.printf("%c", zd.getT()[i]);
-        }
+        Stringovi.getStringovi().zad15(s);
 
 
 

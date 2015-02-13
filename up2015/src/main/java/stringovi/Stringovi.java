@@ -160,7 +160,7 @@ public class Stringovi {
      * 8. Napisati funkciju koja sva slova iz prvog stringa menja u brojeve u drugom stringu tako da je: A=1, B=2, C=3,...
      * primer: ABCMN
      * resenje: 1-2-3-13-14
-     * <p/>
+     * <p>
      * *
      */
     public void zad08(char[] s, char[] r) {
@@ -188,7 +188,7 @@ public class Stringovi {
      * Funkcija od prvog stringa u kojem su samo slova
      * pravi drugi string tako da svako slovo zameni odgovarajucim brojem:
      * A=1, B=2, C=3 itd.:
-     * <p/>
+     * <p>
      * <b>primer: ABCMN<b/>
      * <b>re?enje: 1231314<b/>
      *
@@ -293,7 +293,28 @@ public class Stringovi {
             }
         }
     }
-    public class zad14{
+
+    public void zad15(char[] ulaz) {
+        int[] brSlova = new int[10];
+        Arrays.fill(brSlova, 0);
+        for (char br : ulaz) {
+            brSlova[br - '0']++;
+        }
+        int n = 0;
+        char[] novi = new char[100];
+        for (char c : ulaz) {
+            if (brSlova[c - '0'] == 1) {
+                novi[n++] = c;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            System.out.printf("%c", novi[i]);
+        }
+    }
+
+
+
+    public class zad14 {
         /**
          * Deli string na dva nova identicna stringa
          * Slova u stringu su u rastucem redosledu
@@ -305,7 +326,7 @@ public class Stringovi {
         private char[] p = new char[100];
         private char[] d = new char[100];
         private char[] t = new char[100];
-        private int pr=0,dr=0,tr=0;
+        private int pr = 0, dr = 0, tr = 0;
 
         public int getPr() {
             return pr;
@@ -331,20 +352,20 @@ public class Stringovi {
             return t;
         }
 
-        public void zadatak14(char[] s){
-            int[] brSlova=new int[256];
-            Arrays.fill(brSlova,0);
+        public void zadatak14(char[] s) {
+            int[] brSlova = new int[256];
+            Arrays.fill(brSlova, 0);
             for (char c : s) {
                 brSlova[c]++;
             }
             for (int i = 0; i < brSlova.length; i++) {
-                if(brSlova[i]%2==1){
-                    t[tr++]= (char) (i);
+                if (brSlova[i] % 2 == 1) {
+                    t[tr++] = (char) (i);
                 } else {
-                    if(brSlova[i]>1){
-                        brSlova[i]-=2;
-                        p[pr++]=(char) i;
-                        d[dr++]=(char) i;
+                    if (brSlova[i] > 1) {
+                        brSlova[i] -= 2;
+                        p[pr++] = (char) i;
+                        d[dr++] = (char) i;
                     }
                 }
             }
