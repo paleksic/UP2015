@@ -7,7 +7,7 @@ import java.util.Collections;
 /**
  * Created by paleksic on 2/4/2015.
  */
-@SuppressWarnings("UnusedDeclaration")
+@SuppressWarnings({"UnusedDeclaration", "UnusedAssignment", "ForLoopReplaceableByForEach"})
 
 public class Stringovi {
     private static final Stringovi ourInstance = new Stringovi();
@@ -72,7 +72,7 @@ public class Stringovi {
      * u centru recenice. Ako je u centru razmak – ispisati rec pre i posle.
      */
     public void zad05(String str) {
-        ArrayList<String> reci = new ArrayList<String>();
+        ArrayList<String> reci = new ArrayList<>();
         Collections.addAll(reci, str.split(" "));
         int n = reci.size() - 1;
         if (n % 2 == 0) {
@@ -325,6 +325,7 @@ public class Stringovi {
     public void zad16(char[] ulaz) {
         char[][] reci = new char[10][10];
         int i = 0;
+        //noinspection UnusedAssignment
         int j = 0;
         int k = 0;
         for (char c : ulaz) {
@@ -335,7 +336,7 @@ public class Stringovi {
             i++;
             k = 0;
         }
-        /** FIXME **/
+        /** FIXME algoritam**/
       /*  int n = i + 1;
         int brojac=0;
         for (int i1 = 0; i1 < n; i1++) {
@@ -389,11 +390,12 @@ public class Stringovi {
      * primer: "beograd"
      * slova: "bordega"
      * resenje: "Ima dovoljno slova"
-     * @param ulaz ulazni char[] array
+     *
+     * @param ulaz  ulazni char[] array
      * @param slova slova char[] kojim se testira ulazi string
      * @return vraca true ukoliko ima dovoljno slova, vraca false ukoliko nema
      */
-    public boolean zad19(char[] ulaz, char[] slova){
+    public boolean zad19(char[] ulaz, char[] slova) {
         int[] brUlaz = new int[256];
         Arrays.fill(brUlaz, 0);
         int[] brSlova = new int[256];
@@ -401,64 +403,171 @@ public class Stringovi {
         for (char c : ulaz) {
             brUlaz[c]++;
         }
-        for(char c: slova){
+        for (char c : slova) {
             brSlova[c]++;
         }
         for (int i = 0; i < brUlaz.length; i++) {
-            if(brSlova[i]<brUlaz[i]){
+            if (brSlova[i] < brUlaz[i]) {
                 return false;
             }
         }
         return true;
     }
+
     /**
      * Funkcija koja sabira sve brojeve u stringu
      * Primer: ana20marija30tanja12
      * Resenje: 62
+     *
      * @param ulaz ulazni string
      * @return vraca zbir brojeva
      */
-    public int zad20(char[] ulaz){
-        int rez=0;
-        int broj=0;
-        int brojac=0;
-        for(int i = ulaz.length-1 ; i>0 ; i--){
-            if(ulaz[i]>='0' && ulaz[i]<='9'){
-                int cf=ulaz[i]-'0';
-                broj+=cf*Math.pow((double)10,(double)brojac++);
+    public int zad20(char[] ulaz) {
+        int rez = 0;
+        int broj = 0;
+        int brojac = 0;
+        for (int i = ulaz.length - 1; i > 0; i--) {
+            if (ulaz[i] >= '0' && ulaz[i] <= '9') {
+                int cf = ulaz[i] - '0';
+                broj += cf * Math.pow((double) 10, (double) brojac++);
                 continue;
             }
-            rez+=broj;
-            broj=0;
-            brojac=0;
-        }
-        return rez;
-    }
-    /**
-     * Funkcija koja izvrsava sve racuske operacije u stringu
-     * Primer: ana20marija30tanja-12
-     * Resenje: 38
-     * @param ulaz ulazni string
-     * @return vraca zbir brojeva
-     */
-    public int zad23(char[] ulaz){
-        int rez=0;
-        int broj=0;
-        int brojac=0;
-        for(int i = ulaz.length-1 ; i>0 ; i--){
-            if(ulaz[i]>='0' && ulaz[i]<='9'){
-                int cf=ulaz[i]-'0';
-                broj+=cf*Math.pow((double)10,(double)brojac++);
-                continue;
-            }
-            if(ulaz[i]=='-' && Character.isDigit(ulaz[i+1])) broj*=-1;
-            rez+=broj;
-            broj=0;
-            brojac=0;
+            rez += broj;
+            broj = 0;
+            brojac = 0;
         }
         return rez;
     }
 
+    /**
+     * Funkcija koja izvrsava sve racuske operacije u stringu
+     * Primer: ana20marija30tanja-12
+     * Resenje: 38
+     *
+     * @param ulaz ulazni string
+     * @return vraca zbir brojeva
+     */
+    public int zad23(char[] ulaz) {
+        int rez = 0;
+        int broj = 0;
+        int brojac = 0;
+        for (int i = ulaz.length - 1; i > 0; i--) {
+            if (ulaz[i] >= '0' && ulaz[i] <= '9') {
+                int cf = ulaz[i] - '0';
+                broj += cf * Math.pow((double) 10, (double) brojac++);
+                continue;
+            }
+            if (ulaz[i] == '-' && Character.isDigit(ulaz[i + 1])) broj *= -1;
+            rez += broj;
+            broj = 0;
+            brojac = 0;
+        }
+        return rez;
+    }
+
+    /**
+     * Funkcija koja nalazi najmanji broj u  stringu
+     * Primer: ana20marija30tanja-12
+     * Resenje: -12
+     *
+     * @param ulaz ulazni string
+     * @return vraca najmanji broj
+     */
+    public int zad24(char[] ulaz) {
+        int broj = 0;
+        int brojac = 0;
+        int min = Integer.MAX_VALUE;
+        for (int i = ulaz.length - 1; i > 0; i--) {
+            if (ulaz[i] >= '0' && ulaz[i] <= '9') {
+                int cf = ulaz[i] - '0';
+                broj += cf * Math.pow((double) 10, (double) brojac++);
+                continue;
+            }
+            if (ulaz[i] == '-' && Character.isDigit(ulaz[i + 1])) broj *= -1;
+            if (broj < min) min = broj;
+            broj = 0;
+            brojac = 0;
+        }
+        return min;
+    }
+
+    /**
+     * Funkcija koja pronalazi najduzu rec i ispisuje na ekran
+     * ako ih ima vise isprisuje ih sve
+     * Primer AA-BBB-CC
+     * Rezultat BBB
+     * @param ulaz korisnik unosi string (samo velika slova)
+     */
+    public void zad25(char[] ulaz) {
+        char[][] reci = new char[100][100];
+        int i = 0;
+        //noinspection UnusedAssignment
+        int j = 0;
+        int k = 0;
+        char[] max;
+        //noinspection UnusedAssignment
+        int kNiz[] = new int[100];
+        for (int b = 0; b < ulaz.length; b++) {
+            if (ulaz[b] != '-') {
+                reci[i][k++] = ulaz[b];
+                continue;
+            }
+            reci[i][k++] = '\0';
+            i++;
+            k = 0;
+        }
+
+        //noinspection UnusedAssignment
+        int brojac = 0;
+        max = reci[0].clone();
+        /** Algoritam koji pronalazi najduzu rec**/
+        for (int l = 1; l < reci.length && l <= i; l++) {
+            if (strlen(reci[l]) > strlen(max)) {
+                max = reci[l].clone();
+            }
+        }
+        for (int i1 = 0; i1 < reci.length && i1 <= i; i1++) {
+            if (strlen(max) == strlen(reci[i1])) {
+                System.out.println(reci[i1]);
+            }
+        }
+
+
+    }
+    /**
+     * Funkcija koja pronalazi najveci broj i ispisuje na ekran
+     * ako ih ima vise isprisuje ih sve
+     * Primer 14-13-4+231+2
+     * Rezultat 231
+     * @param ulaz korisnik unosi string (samo velika slova)
+     */
+    public void zad26(char[] ulaz){
+        int max=Integer.MIN_VALUE;
+        int broj=0;
+        int stepen=0;
+        int j=0;
+        int[] brojevi=new int[100];
+        for (int i = ulaz.length-1; i >= 0; i--) {
+            if(ulaz[i]>='0' && ulaz[i]<='9'){
+                int cf=ulaz[i]-'0';
+                broj+=cf*Math.pow((double)10,(double)stepen++);
+                continue;
+            }
+            if(ulaz[i]=='-' && (ulaz[i+1]>='0' && ulaz[i+1]<='9')) broj*=-1;
+
+            brojevi[j++]=broj;
+            broj=0;
+            stepen=0;
+        }
+        for (int i = 0; i < brojevi.length; i++) {
+            if(brojevi[i]>max) max=brojevi[i];
+        }
+        int tmp=0;
+        for (int i = 0; i < brojevi.length; i++) {
+            if(max==brojevi[i]) tmp++;
+        }
+        System.out.printf("%d pojavio se %d puta",max,tmp);
+    }
     public class zad14 {
         /**
          * Deli string na dva nova identicna stringa
@@ -515,5 +624,15 @@ public class Stringovi {
                 }
             }
         }
+    }
+
+    //pomocna funkcija da bi licilo na C programski jezik
+    // java nema nullable char[] array
+    public int strlen(char[] ulaz) {
+        //noinspection UnusedAssignment
+        int m = 0;
+        //noinspection StatementWithEmptyBody
+        for (m = 0; m < ulaz.length && ulaz[m] != '\0'; m++) ;
+        return m;
     }
 }
