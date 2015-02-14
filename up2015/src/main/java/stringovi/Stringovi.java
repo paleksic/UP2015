@@ -322,6 +322,35 @@ public class Stringovi {
         }
     }
 
+    public void zad16(char[] ulaz){
+        char[][] reci= new char[10][10];
+        int i=0;
+        int j=0;
+        int k=0;
+        for(char c : ulaz){
+            if(c!=' '){
+                reci[i][k++]=c;
+                continue;
+            }
+            i++;
+            k=0;
+        }
+        /** FIXME **/
+        int n=i+1;
+        for (int i1 = 0; i1 < n; i1++) {
+            for(j=i1+1 ; j<n ; j++){
+                if(!Arrays.equals(reci[i1], reci[j])){
+                    for(k=j ; k<n-1; k++){
+                        reci[k]=reci[k+1];
+                        n--;
+                    }
+                }
+            }
+        }
+        for (int i1 = 0; i1 < n; i1++) {
+            System.out.println(reci[i1]);
+        }
+    }
     /**
      * Funkcija koja string koji se sastoji samo od cifara vecih
      * od nula, modifikuje tako da izmedju scifara koje se ponavljaju
