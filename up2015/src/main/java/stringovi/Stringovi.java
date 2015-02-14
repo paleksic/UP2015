@@ -322,35 +322,35 @@ public class Stringovi {
         }
     }
 
-    public void zad16(char[] ulaz){
-        char[][] reci= new char[10][10];
-        int i=0;
-        int j=0;
-        int k=0;
-        for(char c : ulaz){
-            if(c!=' '){
-                reci[i][k++]=c;
+    public void zad16(char[] ulaz) {
+        char[][] reci = new char[10][10];
+        int i = 0;
+        int j = 0;
+        int k = 0;
+        for (char c : ulaz) {
+            if (c != ' ') {
+                reci[i][k++] = c;
                 continue;
             }
             i++;
-            k=0;
+            k = 0;
         }
         /** FIXME **/
-        int n=i+1;
+      /*  int n = i + 1;
+        int brojac=0;
         for (int i1 = 0; i1 < n; i1++) {
-            for(j=i1+1 ; j<n ; j++){
-                if(!Arrays.equals(reci[i1], reci[j])){
-                    for(k=j ; k<n-1; k++){
-                        reci[k]=reci[k+1];
-                        n--;
-                    }
+            j=i1+1;
+            k=i1+1;
+            for( ; j < n  ; j++){
+                if(!Arrays.equals(reci[j],reci[i1])){
+                    reci[k]=reci[j];
+                    k++;
                 }
+
             }
-        }
-        for (int i1 = 0; i1 < n; i1++) {
-            System.out.println(reci[i1]);
-        }
+        }*/
     }
+
     /**
      * Funkcija koja string koji se sastoji samo od cifara vecih
      * od nula, modifikuje tako da izmedju scifara koje se ponavljaju
@@ -381,6 +381,82 @@ public class Stringovi {
             System.out.printf("%c", novi[i]);
         }
 
+    }
+
+    /**
+     * Ispituje da li u drugom stringu ima dovoljno slova da
+     * se formira rec iz ulaznog stringa
+     * primer: "beograd"
+     * slova: "bordega"
+     * resenje: "Ima dovoljno slova"
+     * @param ulaz ulazni char[] array
+     * @param slova slova char[] kojim se testira ulazi string
+     * @return vraca true ukoliko ima dovoljno slova, vraca false ukoliko nema
+     */
+    public boolean zad19(char[] ulaz, char[] slova){
+        int[] brUlaz = new int[256];
+        Arrays.fill(brUlaz, 0);
+        int[] brSlova = new int[256];
+        Arrays.fill(brSlova, 0);
+        for (char c : ulaz) {
+            brUlaz[c]++;
+        }
+        for(char c: slova){
+            brSlova[c]++;
+        }
+        for (int i = 0; i < brUlaz.length; i++) {
+            if(brSlova[i]<brUlaz[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+    /**
+     * Funkcija koja sabira sve brojeve u stringu
+     * Primer: ana20marija30tanja12
+     * Resenje: 62
+     * @param ulaz ulazni string
+     * @return vraca zbir brojeva
+     */
+    public int zad20(char[] ulaz){
+        int rez=0;
+        int broj=0;
+        int brojac=0;
+        for(int i = ulaz.length-1 ; i>0 ; i--){
+            if(ulaz[i]>='0' && ulaz[i]<='9'){
+                int cf=ulaz[i]-'0';
+                broj+=cf*Math.pow((double)10,(double)brojac++);
+                continue;
+            }
+            rez+=broj;
+            broj=0;
+            brojac=0;
+        }
+        return rez;
+    }
+    /**
+     * Funkcija koja izvrsava sve racuske operacije u stringu
+     * Primer: ana20marija30tanja-12
+     * Resenje: 38
+     * @param ulaz ulazni string
+     * @return vraca zbir brojeva
+     */
+    public int zad23(char[] ulaz){
+        int rez=0;
+        int broj=0;
+        int brojac=0;
+        for(int i = ulaz.length-1 ; i>0 ; i--){
+            if(ulaz[i]>='0' && ulaz[i]<='9'){
+                int cf=ulaz[i]-'0';
+                broj+=cf*Math.pow((double)10,(double)brojac++);
+                continue;
+            }
+            if(ulaz[i]=='-' && Character.isDigit(ulaz[i+1])) broj*=-1;
+            rez+=broj;
+            broj=0;
+            brojac=0;
+        }
+        return rez;
     }
 
     public class zad14 {
