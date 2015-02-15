@@ -11,18 +11,17 @@ public class zad02 implements rekurzija {
         return 0;
     }
 
-    @Override
     public double f_iter(int m, int n) {
-        double sum=n;
-        for (int i = n-1; i >= m; i--) {
-            sum=i+1.0/sum;
+        double sum = n;
+        for (int i = n - 1; i >= m; i--) {
+            sum = i + 1.0 / sum;
         }
         return sum;
     }
 
     @Override
     public double f_rek(int m, int n) {
-        if(m==n) return n;
-        return m+1.0/f_rek(m+1,n);
+        if (m == n) return n;
+        return m + 1.0 / f_rek(m + 1, n);
     }
 }

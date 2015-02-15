@@ -7,25 +7,25 @@ package Rekurzija;
 public class zad04 implements rekurzija {
     int niz[] = new int[100];
 
-    public int napuniNiz(int n, int k){
-        if(n<1) return k;
-        niz[k]=n;
-        return napuniNiz(n/2,k+1);
+    public int napuniNiz(int n, int k) {
+        if (n < 1) return k;
+        niz[k] = n;
+        return napuniNiz(n / 2, k + 1);
     }
 
-    public double f_rek(int n){
-       if(n==1) return 1;
-       return n+1.0/f_rek(n/2);
-   }
+    public double f_rek(int n) {
+        if (n == 1) return 1;
+        return n + 1.0 / f_rek(n / 2);
+    }
 
     @Override
     public double f_iter(int n) {
-        int k=napuniNiz(n,0);
+        int k = napuniNiz(n, 0);
         int i;
-        k-=1;
-        double sum=niz[k];
-        for(i = k-1 ; i>=0 ; i--){
-            sum=niz[i]+1.0/sum;
+        k -= 1;
+        double sum = niz[k];
+        for (i = k - 1; i >= 0; i--) {
+            sum = niz[i] + 1.0 / sum;
         }
         return sum;
     }
@@ -35,8 +35,4 @@ public class zad04 implements rekurzija {
         return 0;
     }
 
-    @Override
-    public double f_iter(int i, int m) {
-        return 0;
-    }
 }
