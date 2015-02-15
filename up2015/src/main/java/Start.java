@@ -1,4 +1,4 @@
-import Rekurzija.zad01;
+import Rekurzija.zad04;
 
 /**
  * Created by paleksic on 2/8/2015.
@@ -7,8 +7,8 @@ import Rekurzija.zad01;
 @SuppressWarnings("UnusedAssignment")
 public class Start {
     public static void main(String[] args) {
-        zad01 zad = new zad01();
-        System.out.println(zad.f_iter(6));
+        zad04 zad = new zad04();
+        System.out.println(zad.f_rek(50));
 
 
 
