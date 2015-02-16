@@ -1,4 +1,4 @@
-import Rekurzija.zad08;
+import Rekurzija.zad09;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -13,9 +13,9 @@ public class Start {
 
     public static void main(String[] args) {
         Start s = new Start();
-        zad08 zad = new zad08();
-        System.out.println(s.round(zad.f_rek(345,5),6));
-        System.out.println(s.round(zad.f_iter(345,5),6));
+        zad09 zad = new zad09();
+        System.out.println(s.round(zad.f_iter(4, 9), 6));
+        System.out.println(s.round(zad.f_iter(4,9),6));
 
 
     }
