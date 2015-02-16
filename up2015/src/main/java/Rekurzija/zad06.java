@@ -4,8 +4,7 @@ package Rekurzija;
  * Created by paleksic on 2/15/2015.
  * paleksic083@gmail.com
  */
-/*n=6 , m = 372*/
-    /* 3 7 2 3 7 2*/
+
 public class zad06 implements rekurzija2 {
     @Override
     public double f_iter(int m, int n) {

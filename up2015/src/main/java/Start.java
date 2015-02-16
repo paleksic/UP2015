@@ -1,4 +1,7 @@
-import Rekurzija.zad07;
+import Rekurzija.zad08;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 /**
  * Created by paleksic on 2/8/2015.
@@ -6,11 +9,19 @@ import Rekurzija.zad07;
  */
 @SuppressWarnings("UnusedAssignment")
 public class Start {
+
+
     public static void main(String[] args) {
-        zad07 zad = new zad07();
-        System.out.println(zad.f_rek(3, 5));
-        System.out.println(Math.sqrt(5 + Math.sqrt(5 + Math.sqrt(6 + Math.sqrt(4 + Math.sqrt(7))))));
+        Start s = new Start();
+        zad08 zad = new zad08();
+        System.out.println(s.round(zad.f_rek(345,5),6));
+        System.out.println(s.round(zad.f_iter(345,5),6));
 
 
+    }
+    public double round(double broj, int decimale){
+        if(decimale<0) throw new IllegalArgumentException();
+        BigDecimal bd = new BigDecimal(broj);
+        return bd.setScale(decimale, RoundingMode.HALF_UP).doubleValue();
     }
 }
