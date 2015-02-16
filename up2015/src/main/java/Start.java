@@ -1,5 +1,4 @@
-import Rekurzija.zad05;
-
+import Rekurzija.zad07;
 /**
  * Created by paleksic on 2/8/2015.
  * paleksic083@gmail.com
@@ -7,9 +6,9 @@ import Rekurzija.zad05;
 @SuppressWarnings("UnusedAssignment")
 public class Start {
     public static void main(String[] args) {
-        zad05 zad = new zad05();
-        System.out.println(zad.f_rek(1,12));
-        System.out.println(zad.f_iter(12));
+        zad07 zad = new zad07();
+        System.out.println(zad.f_rek(3,5));
+        System.out.println(Math.sqrt(5+Math.sqrt(5+Math.sqrt(6+Math.sqrt(4+Math.sqrt(7))))));
 
 
 
