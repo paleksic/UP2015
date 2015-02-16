@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2684ae65-4043-47db-b191-36ec924966a9" name="Default" comment="sve">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/rekurzija2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad06.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad06Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad07.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad07Test.java" />
+    <list default="true" id="2684ae65-4043-47db-b191-36ec924966a9" name="Default" comment="uradjen 6 i 7 rekurzija">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/main/java/Start.java" afterPath="$PROJECT_DIR$/up2015/src/main/java/Start.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/main/java/stringovi/Stringovi.java" afterPath="$PROJECT_DIR$/up2015/src/main/java/stringovi/Stringovi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/pom.xml" afterPath="$PROJECT_DIR$/up2015/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/rekurzija.java" afterPath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/rekurzija.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/rekurzija2.java" afterPath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/rekurzija2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad02Test.java" afterPath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad02Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad03Test.java" afterPath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad03Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad04Test.java" afterPath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad04Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad05Test.java" afterPath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad05Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad06.java" afterPath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad06.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad06Test.java" afterPath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad06Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad07.java" afterPath="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad07.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad07Test.java" afterPath="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad07Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/up2015/target/" />
     <manually-removed-from-ignored>
@@ -21,7 +27,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="true" />
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="Commander">
     <leftPanel />
     <rightPanel />
@@ -48,25 +54,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Start.java">
+      <file leaf-file-name="zad06.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad06.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="391">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="2.0981014" vertical-offset="0" max-vertical-offset="833">
+              <caret line="39" column="102" selection-start-line="39" selection-start-column="102" selection-end-line="39" selection-end-column="102" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zad07.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Start.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="374">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zad07.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad07.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2088608" vertical-offset="111" max-vertical-offset="697">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="381" max-vertical-offset="697">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding>
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stringovi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/up2015/src/main/java/stringovi/Stringovi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5168" max-vertical-offset="10744">
+              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rekurzija.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Rekurzija/rekurzija.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,8 +164,8 @@
         <option value="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad06Test.java" />
         <option value="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad06.java" />
         <option value="$PROJECT_DIR$/up2015/src/test/Rekurzija/zad07Test.java" />
-        <option value="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad07.java" />
         <option value="$PROJECT_DIR$/up2015/src/main/java/Start.java" />
+        <option value="$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad07.java" />
       </list>
     </option>
   </component>
@@ -411,6 +447,24 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="up2015">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="up2015">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main/java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
         <subPane subId="Default">
@@ -505,7 +559,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="129" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="158" />
@@ -528,6 +582,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="LayoutCode.rearrangeEntries" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -973,7 +1028,7 @@
       <workItem from="1423997980308" duration="6562000" />
       <workItem from="1424006838099" duration="230000" />
       <workItem from="1424007172778" duration="4842000" />
-      <workItem from="1424032130282" duration="12023000" />
+      <workItem from="1424032130282" duration="12351000" />
     </task>
     <task id="LOCAL-00001" summary="stringovi">
       <created>1423365493000</created>
@@ -1183,7 +1238,13 @@
       <option name="project" value="LOCAL" />
       <updated>1424007199806</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="uradjen 6 i 7 rekurzija">
+      <created>1424047902786</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1424047902786</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <option name="closeIssue" value="false" />
     <option name="searchClosedTasks" value="true" />
     <servers>
@@ -1203,7 +1264,7 @@
     </servers>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132651000" />
+    <option name="totallyTimeSpent" value="132979000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1227,9 +1288,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44117647" sideWeight="0.49848714" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44117647" sideWeight="0.49848714" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31535947" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1243,9 +1304,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34477124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21299094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15030211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1256,7 +1318,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970588" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33383685" sideWeight="0.50121653" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1336,20 +1397,13 @@
     <MESSAGE value="srednje interfejs" />
     <MESSAGE value="maven i intellij idea setup" />
     <MESSAGE value="sve" />
-    <option name="LAST_COMMIT_MESSAGE" value="sve" />
+    <MESSAGE value="uradjen 6 i 7 rekurzija" />
+    <option name="LAST_COMMIT_MESSAGE" value="uradjen 6 i 7 rekurzija" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad07.java</url>
-          <line>24</line>
-          <properties class="Rekurzija.zad07" method="f_rek" />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -1603,14 +1657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/up2015/src/main/java/stringovi/Stringovi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31989247" vertical-offset="612" max-vertical-offset="10710">
-          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/up2015/src/test/Rekurzija/zad04Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9127517" vertical-offset="0" max-vertical-offset="527">
@@ -1677,14 +1723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Rekurzija/rekurzija.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53797466" vertical-offset="0" max-vertical-offset="316">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/up2015/src/test/Rekurzija/zad06Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
@@ -1692,14 +1730,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad06.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74659866" vertical-offset="224" max-vertical-offset="833">
-          <caret line="39" column="102" selection-start-line="39" selection-start-column="102" selection-end-line="39" selection-end-column="102" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1721,20 +1751,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="391">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="374">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad07.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2088608" vertical-offset="111" max-vertical-offset="697">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="381" max-vertical-offset="697">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/up2015/src/main/java/stringovi/Stringovi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5168" max-vertical-offset="10744">
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Rekurzija/rekurzija.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/up2015/src/main/java/Rekurzija/zad06.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0981014" vertical-offset="0" max-vertical-offset="833">
+          <caret line="39" column="102" selection-start-line="39" selection-start-column="102" selection-end-line="39" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>

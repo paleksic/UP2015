@@ -6,5 +6,6 @@ package Rekurzija;
  */
 public interface rekurzija2 {
     public double f_iter(int i, int n);
+
     public double f_rek(int i, int n);
 }

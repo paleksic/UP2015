@@ -496,6 +496,7 @@ public class Stringovi {
      * ako ih ima vise isprisuje ih sve
      * Primer AA-BBB-CC
      * Rezultat BBB
+     *
      * @param ulaz korisnik unosi string (samo velika slova)
      */
     public void zad25(char[] ulaz) {
@@ -534,40 +535,53 @@ public class Stringovi {
 
 
     }
+
     /**
      * Funkcija koja pronalazi najveci broj i ispisuje na ekran
      * ako ih ima vise isprisuje ih sve
      * Primer 14-13-4+231+2
      * Rezultat 231
+     *
      * @param ulaz korisnik unosi string (samo velika slova)
      */
-    public void zad26(char[] ulaz){
-        int max=Integer.MIN_VALUE;
-        int broj=0;
-        int stepen=0;
-        int j=0;
-        int[] brojevi=new int[100];
-        for (int i = ulaz.length-1; i >= 0; i--) {
-            if(ulaz[i]>='0' && ulaz[i]<='9'){
-                int cf=ulaz[i]-'0';
-                broj+=cf*Math.pow((double)10,(double)stepen++);
+    public void zad26(char[] ulaz) {
+        int max = Integer.MIN_VALUE;
+        int broj = 0;
+        int stepen = 0;
+        int j = 0;
+        int[] brojevi = new int[100];
+        for (int i = ulaz.length - 1; i >= 0; i--) {
+            if (ulaz[i] >= '0' && ulaz[i] <= '9') {
+                int cf = ulaz[i] - '0';
+                broj += cf * Math.pow((double) 10, (double) stepen++);
                 continue;
             }
-            if(ulaz[i]=='-' && (ulaz[i+1]>='0' && ulaz[i+1]<='9')) broj*=-1;
+            if (ulaz[i] == '-' && (ulaz[i + 1] >= '0' && ulaz[i + 1] <= '9')) broj *= -1;
 
-            brojevi[j++]=broj;
-            broj=0;
-            stepen=0;
+            brojevi[j++] = broj;
+            broj = 0;
+            stepen = 0;
         }
         for (int i = 0; i < brojevi.length; i++) {
-            if(brojevi[i]>max) max=brojevi[i];
+            if (brojevi[i] > max) max = brojevi[i];
         }
-        int tmp=0;
+        int tmp = 0;
         for (int i = 0; i < brojevi.length; i++) {
-            if(max==brojevi[i]) tmp++;
+            if (max == brojevi[i]) tmp++;
         }
-        System.out.printf("%d pojavio se %d puta",max,tmp);
+        System.out.printf("%d pojavio se %d puta", max, tmp);
     }
+
+    //pomocna funkcija da bi licilo na C programski jezik
+    // java nema nullable char[] array
+    public int strlen(char[] ulaz) {
+        //noinspection UnusedAssignment
+        int m = 0;
+        //noinspection StatementWithEmptyBody
+        for (m = 0; m < ulaz.length && ulaz[m] != '\0'; m++) ;
+        return m;
+    }
+
     public class zad14 {
         /**
          * Deli string na dva nova identicna stringa
@@ -624,15 +638,5 @@ public class Stringovi {
                 }
             }
         }
-    }
-
-    //pomocna funkcija da bi licilo na C programski jezik
-    // java nema nullable char[] array
-    public int strlen(char[] ulaz) {
-        //noinspection UnusedAssignment
-        int m = 0;
-        //noinspection StatementWithEmptyBody
-        for (m = 0; m < ulaz.length && ulaz[m] != '\0'; m++) ;
-        return m;
     }
 }
