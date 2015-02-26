@@ -1,9 +1,7 @@
 package start;
 
-import Rekurzija.zad12;
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
+import Rekurzija.zad16;
+import funkcije.Round;
 
 /**
  * Created by paleksic on 2/8/2015.
@@ -14,14 +12,10 @@ public class Start {
 
 
     public static void main(String[] args) {
-        Start s = new Start();
-        zad12 zad = new zad12();
-        System.out.println((zad.f_iter(5,7,6)));
+        //Start s = new Start();
+        zad16 zad = new zad16();
+        System.out.println(Round.round(zad.f_iter(6), 6));
+        System.out.println(Round.round(zad.f_rek(1, 6), 6));
         //System.out.println((zad.f_rek(4, 21)));
-    }
-    public double round(double broj, int decimale){
-        if(decimale<0) throw new IllegalArgumentException();
-        BigDecimal bd = new BigDecimal(broj);
-        return bd.setScale(decimale, RoundingMode.HALF_UP).doubleValue();
     }
 }
