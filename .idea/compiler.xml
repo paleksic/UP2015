@@ -26,6 +26,8 @@
         <module name="up2015" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel>
+      <module name="up2015" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
